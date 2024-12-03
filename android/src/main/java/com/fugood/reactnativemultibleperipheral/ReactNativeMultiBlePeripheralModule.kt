@@ -241,7 +241,8 @@ class ReactNativeMultiBlePeripheralModule(reactContext: ReactApplicationContext)
       val response = bluetoothGattServer.notifyCharacteristicChanged(
         device,
         characteristic,
-        confirm
+        confirm,
+        value
       )
     }
     promise.resolve(null)
